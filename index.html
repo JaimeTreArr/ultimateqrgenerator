@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador de Códigos QR Moderno y Gratuito">
+    <title>QR Generator Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <main class="glass-container">
+        <header>
+            <h1>QR Gen</h1>
+            <p>Convierte tus enlaces en códigos QR al instante.</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="qr-text" placeholder="Ingresa tu URL o texto aquí..." autocomplete="off">
+            <button id="generate-btn">
+                <span>Generar QR</span>
+                <div class="btn-shine"></div>
+            </button>
+        </div>
+
+        <div class="qr-output-container" id="qr-container">
+            <div id="qrcode"></div>
+            <p id="placeholder-text">Tu código aparecerá aquí</p>
+        </div>
+
+        <div class="actions" style="display: none;" id="actions-panel">
+            <button class="action-btn" id="download-btn">Descargar PNG</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
